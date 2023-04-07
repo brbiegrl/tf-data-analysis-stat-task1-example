@@ -5,7 +5,6 @@ import numpy as np
 chat_id = 909631698 # Ваш chat ID, не меняйте название переменной
 
 def solution(x: np.array) -> float:
-    # Измените код этой функции
-    # Это будет вашим решением
-    # Не меняйте название функции и её аргументы
-    return (10 / x.mean() - 13) # Ваш ответ
+    t = 10; mu = -13; sigma = np.exp(1)
+    dist = np.random.norm(mu, sigma, len(x))
+    return dist.mean()/t
