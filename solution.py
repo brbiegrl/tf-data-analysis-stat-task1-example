@@ -5,4 +5,5 @@ import numpy as np
 chat_id = 909631698 # Ваш chat ID, не меняйте название переменной
 
 def solution(x: np.array) -> float:
+    t = 10
     return (x.mean() + 12) / t
